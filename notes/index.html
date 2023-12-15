@@ -17,7 +17,7 @@
 <h1> HTML Intro </h1>
   <p>The following infos are my notes from the coursera lecture <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/7zpSP/lecture-3-anatomy-of-an-html-tag">Lecture 3: Anatomy of an HTML Tag.</a></p>
 
-<section>
+<section id="section1">
  	<h2>Lecture 03 - Anatomy of an html tag</h2>
   <article>
     <h3>Tag Structure</h3>
@@ -40,7 +40,7 @@
   </article>
 </section>
 
-<section>
+<section id="section2">
   <h2>Lecture 04 - Basic HTML Document Structure</h2>
   <article>
     <h3>Tag attributes</h3>
@@ -57,51 +57,51 @@
   </article>
 </section>
 
-<h2>Lecture 05 - HTML Content Models</h2>
 
-<section>
-  
-  <h3>Elements in prior HTML versions</h3>
 
+<section id="section3">
+  <h2>Lecture 05 - HTML Content Models</h2>
   <article>
+    <h3>Elements in prior HTML versions</h3>
+    <p>The content model determines which elements are allowed to be nested inside with other element. Before HTML5 there were only block elements or inline elements. Now there are seven models.</p>
 
-  <p>The content model determines which elements are allowed to be nested inside with other element. Before HTML5 there were only block elements or inline elements. Now there are seven models.</p>
-
-  <h3>Block level elements (similar to HTML5 category &quot;Flow Content&quot;)</h3>
-  
-  <ol>
-	 <li>begin on a new line by default</li>
-	 <li>may contain inline or other block-level elements</li>
-  </ol>
-
-  <h3>Inline elements (similar to HTML5 category &quot;Phrasing Content&quot;)</h3>
-  
+    <h3>Block level elements (similar to HTML5 category &quot;Flow Content&quot;)</h3>
+    
     <ol>
-	   <li>render on the same line by default</li>
-	   <li>may only contain other inline elements</li>
+  	 <li>begin on a new line by default</li>
+  	 <li>may contain inline or other block-level elements</li>
     </ol>
-  
-  </article>
 
-  <article>
+    <h3>Inline elements (similar to HTML5 category &quot;Phrasing Content&quot;)</h3>
     
-    <h3>Div and Span elements</h3>
+      <ol>
+  	   <li>render on the same line by default</li>
+  	   <li>may only contain other inline elements</li>
+      </ol>
     
-    <p>Div(block) and Span(inline) are the most generic elements. Div elements can contain Span elements, but not the other way around.</p>
-    
-    <p>You can have: &lt;div&gt; &lt;span&gt; &lt;/span&gt; &lt;/div&gt; but not &lt;span&gt; &lt;div&gt; &lt;/div&gt; &lt;/span&gt;</p>
+    </article>
 
-    <p>W3.org lists the seven types of element here: <a href="https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html">Link.</a> </p>
+    <article>
+      
+      <h3>Div and Span elements</h3>
+      
+      <p>Div(block) and Span(inline) are the most generic elements. Div elements can contain Span elements, but not the other way around.</p>
+      
+      <p>You can have: &lt;div&gt; &lt;span&gt; &lt;/span&gt; &lt;/div&gt; but not &lt;span&gt; &lt;div&gt; &lt;/div&gt; &lt;/span&gt;</p>
+
+      <p>W3.org lists the seven types of element here: <a href="https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html">Link.</a> </p>
   </article>
 </section>
 
 
-<h2>Lecture 06 - Heading Elements and some new HTML5 semantic elements</h2>
-
+<section id="section4">
+  <h2>Lecture 06 - Heading Elements and some new HTML5 semantic elements</h2>
+    <article> 
+    <h3>Header for article</h3>
   <p>A semantic html element that tells you something about the content, e.g. it's importance. It helps readability and it MAY help search engines, but that is not for sure.</p>
 
-  <h1>This is h2 (main heading)</h1>
-  <h2>This is h3 (subheading)</h2>
+
+  <h2>This is h2 (subheading)</h2>
   <h3>This is h3 (subheading)</h3>
   <h4>This is h4 (subheading)</h4>
   <h5>This is h5 (subheading)</h5>
@@ -110,16 +110,12 @@
   <p>These elements should only be used for creating a structure, not for styling. Just think of MS Word or Confluence.</p>
 
 
-<section>
-  <h2>Header for section</h2>
-    <article> 
-  	<h3>Header for article</h3>
  	  <p>A section can have articles inside and an Article can have sections inside it. Sections and articles are block level codes. Therefore we might as well have div tags. However it is so much easier to read the code this way.</p>
     </article> 
 </section>
    
 
-<section>
+<section id="section5">
   <h2>Lecture 07 - Lists</h2>
     <article> 
     <h3>Lists and Tables are not the same</h3>
@@ -215,7 +211,41 @@
   </article>
 </section>
 
+<section>
+  <h2>Lecture 09 - Creating Links</h2>
+  <article>
+    <h3>Making websites interactive</h3>
 
+    <h4>External Links</h4>
+      <p>&lt;a href="http://www.google.com" target="_blank" title=" title helps screenreaders for visually impaired people!!, e.g. external link"&gt; name of external link, e.g. Google &lt;/a&gt;</p>
+      <p></p>
+      <p>The following link is an inline link and will lead to Google: <a href="http://www.google.com" target="_blank">Google</a></p>
+      <p>You wanna use the target _blank tag so people who leave your website don't forget about it and continue somewhere else.</p>
+
+    <h4>Internal Links</h4>
+      <p>&lt;a href="same-directory.html" title="internal link"&gt; name of internal link, e.g. Same Directory &lt;div&gt; You can also insert a div tag inside the anchor tag. &lt;/div&gt; 
+      &lt;/a&gt;</p>
+      This link leads to a page within this directory. It's called notes02.html: <a href="notes02.html"><div> I haven't written much. It's just for the purpose of demonstrating that the link within the div tag will be rendered in the next line as opposed to the Google link above. However, because of the div-tag you cannot enter the a-tag inside a p-tag. Just leave the p-tag out.</div></a>
+      <p>Use this, when you have a logo in a corner of your website and you want people to find it easy to click on it to get to get to the homepage.</p>
+      <p>How is it possible to put a block-level element such as the div tag INSIDE an inline tag such as the a-tag? Because the a-tag is both a flow content (inline) and a phrasing content (block).</p>
+      
+
+    <h4>Link to some sections inside this page! :)</h4>
+    <ul>
+    <li><a href="#section1">Section 1 - Lecture 03 - Anatomy of an html tag</a></li>
+    <li><a href="#section2">Section 2 - Lecture 04 - Basic HTML Document Structure</a></li>
+    <li><a href="#section3">Section 3 - Lecture 05 - HTML Content Models</a></li>
+    <li><a href="#section4">Section 4 - Lecture 06 - Heading Elements and some new HTML5 semantic elements</a></li>
+    <li><a href="#section5">Section 5 - Lecture 07 - Lists</a></li>
+    <li>create an anchor tag with &lt;a name=&quot;section1&quot;&gt;</li>
+    <li>or a section id with &lt;section id=&quot;section1&quot;&gt; - the section name does not contain the pound sign #</li>
+    <li>&lt;a href=&quot;#section1&quot;&gt; - only the link to that anchor contains a pound sign #</li>
+    </ul>
+
+    
+
+  </article>
+</section>
 
 
 <hr>
