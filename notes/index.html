@@ -15,17 +15,17 @@
   </header>
 
 <h1> HTML Intro </h1>
-  <p>The following infos are my notes from the coursera lecture <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/7zpSP/lecture-3-anatomy-of-an-html-tag">"Lecture 3: Anatomy of an HTML Tag".</a></p>
+  <p>The following infos are my notes from the coursera lecture <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/7zpSP/lecture-3-anatomy-of-an-html-tag">Lecture 3: Anatomy of an HTML Tag.</a></p>
 
 <section>
- 	<h3>Anatomy of an html tag</h3>
+ 	<h2>Lecture 03 - Anatomy of an html tag</h2>
   <article>
     <h3>Tag Structure</h3>
 
     <p>Most html tags have an opening and closing tag and they surround content.</p> 
 
     <ul>
-      <li>An example of a tag would be "&lt;p&gt;".</li>
+      <li>An example of a tag would be &quot;&lt;p&gt;&quot;.</li>
       <li>&lt;p&gt; content &lt;/p&gt;</li>
       <li>Technically speaking p is the element and &lt;p&gt; is the tag. But the two terms are used for both.</li>
       <li>No space is allowed right after the opening bracket. Space is allowed anywhere else.</li>
@@ -38,10 +38,13 @@
     </ul>
 
   </article>
+</section>
 
+<section>
+  <h2>Lecture 04 - Basic HTML Document Structure</h2>
   <article>
     <h3>Tag attributes</h3>
-      <p>Example: &lt;tr id="tableHeadersId"&gt;</p>
+      <p>Example: &lt;tr id=&quot;tableHeadersId&quot;&gt;</p>
       <p>Every html element can have predefined attributes. Attributes are a pair of attribute name and attribute value. For example id attributes need to be unique. No other element can have the same id!</p>
      
       <ul>
@@ -49,53 +52,12 @@
         <li>Attributes can only be assigned in the opening tag.</li>
       </ul>
 
-      <p>Value of attributes. It's not technically required to surround the attribute with double or single quotes, but you need to watch out for situations like these: "alert('hi')". It doesn't matter which quote you start with, but the inner quotes must be closed first.</p>
+      <p>Value of attributes. It's not technically required to surround the attribute with double or single quotes, but you need to watch out for situations like these: &quot;alert('hi')&quot;. It doesn't matter which quote you start with, but the inner quotes must be closed first.</p>
     
-  </article>
-
-  <article>
-  <h3>How to write a tag out as plain text in html</h3>
-
-    <p>How did I write "&lt;p&gt;"? With html entities!</p>
-
-    <table>
-      <thead>
-        <tr id="tableHeadersId">
-          <th>Sign</th>
-          <th>can be expressed with the entity</th>
-          <th>or the entity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&lt;</td>
-          <td>&amp;lt;</td>
-          <td>&amp;#060;</td>
-        </tr>
-        <tr>
-          <td>&gt;</td>
-          <td>&amp;gt;</td>
-          <td>&amp;#062;</td>
-        </tr>
-        <tr>
-          <td>&#8220;</td>
-          <td>&amp;quot;</td>
-          <td>&amp;#034;</td>
-        </tr>
-      <tr>
-          <td>&amp;</td>
-          <td>&amp;amp;</td>
-          <td>&amp;#038;</td>
-      </tr>
-      </tbody>
-    </table>
-
-    <br>
-
   </article>
 </section>
 
-<h2>HTML Content Models</h2>
+<h2>Lecture 05 - HTML Content Models</h2>
 
 <section>
   
@@ -105,14 +67,14 @@
 
   <p>The content model determines which elements are allowed to be nested inside with other element. Before HTML5 there were only block elements or inline elements. Now there are seven models.</p>
 
-  <h3>Block level elements (similar to HTML5 category "Flow Content")</h3>
+  <h3>Block level elements (similar to HTML5 category &quot;Flow Content&quot;)</h3>
   
   <ol>
 	 <li>begin on a new line by default</li>
 	 <li>may contain inline or other block-level elements</li>
   </ol>
 
-  <h3>Inline elements (similar to HTML5 category "Phrasing Content")</h3>
+  <h3>Inline elements (similar to HTML5 category &quot;Phrasing Content&quot;)</h3>
   
     <ol>
 	   <li>render on the same line by default</li>
@@ -134,7 +96,7 @@
 </section>
 
 
-<h2>Heading Elements and some new HTML5 semantic elements</h2>
+<h2>Lecture 06 - Heading Elements and some new HTML5 semantic elements</h2>
 
   <p>A semantic html element that tells you something about the content, e.g. it's importance. It helps readability and it MAY help search engines, but that is not for sure.</p>
 
@@ -162,7 +124,7 @@
     <article> 
     <h3>Lists and Tables are not the same</h3>
     
-    <p>See the document "unordered lists before html"</p>
+    <p>See the document &quot;unordered lists before html&quot;</p>
 
 
     <ul>
@@ -175,8 +137,8 @@
             <ul>
               <li>&lt;ul&gt; This tag opens the indented list.
               <ul>
-                <li>&lt;li&gt; "Indented list item 1"</li>
-                <li>&lt;/li&gt; "Indented list item 2"</li>
+                <li>&lt;li&gt; &quot;Indented list item 1&quot;</li>
+                <li>&lt;/li&gt; &quot;Indented list item 2&quot;</li>
               </ul>
           </li>
           <li>&lt;/ul&gt; This tag closes the indented list.</li>
@@ -192,7 +154,66 @@
 </section>
 
 
+<section>
+  <h2>Lecture 08 - HTML Character Entity References</h2>
+  <article>
+    <h3>How to write a tag out as plain text in html</h3>
+    
+    <p>There are three characters that should ALWAYS be escaped: &lt;, &gt;, and &amp;</p>
 
+    <p>How did I write &quot;&lt;p&gt;&quot;? With html entities! see <a href="https://mateam.net/html-escape-characters/">Awesome list of all html entities</a></p>
+
+    <table>
+      <thead>
+        <tr id=&quot;tableHeadersId&quot;>
+          <th>Sign</th>
+          <th>can be expressed with the entity</th>
+          <th>or by this code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;</td>
+          <td>&amp;lt;</td>
+          <td>&amp;#060;</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>&amp;gt;</td>
+          <td>&amp;#062;</td>
+        </tr>
+        <tr>
+          <td>&#8220;</td>
+          <td>&amp;quot;</td>
+          <td>&amp;#034;</td>
+        </tr>
+      <tr>
+          <td>&amp;</td>
+          <td>&amp;amp;</td>
+          <td>&amp;#038;</td>
+      </tr>
+      <tr>
+          <td>&copy;</td>
+          <td>&amp;copy;</td>
+          <td>&amp;#169;</td>
+      </tr>
+      <tr>
+          <td>non-breaking space <br>(always stay in same line)</td>
+          <td>&amp;nbsp;</td>
+          <td>&amp;#32;</td>
+      </tr>
+      <tr>
+          <td>&quot;</td>
+          <td>&amp;quot;</td>
+          <td>&amp;#34;</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br>
+
+  </article>
+</section>
 
 
 
