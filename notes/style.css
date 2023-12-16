@@ -1,12 +1,12 @@
 body {
 	background-color: lightblue;
 	font-family: Arial, sans-serif;
-	margin: 40px;
 	color: #2e3136;
 }
 
 h1 {
 	font-family: Arial, sans-serif;
+	font-size: 36px;
 	color: #1c232e;
 }
 
@@ -14,7 +14,23 @@ p {
 	color: #4E7893;
 }
 
+a {
+	color: white;
+}
+
 #section1 {
 	background-color: #143880;
 	color: #C6BEBE;
+	margin-right: 0%;
+	margin-left: 40%;
+	margin-top: 10%;
+	margin-bottom: -5%;
+	text-align: right;
+}
+
+#section2 {
+	background-color: #4774D0;
+	margin-right: 20%;
+	margin-left: 3%;
+	margin-bottom: 10%;
 }
